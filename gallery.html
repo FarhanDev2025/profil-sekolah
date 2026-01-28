@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - SMK Miftahul Jannah</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(12, 36, 97, 0.9), rgba(12, 36, 97, 0.8)), url('assets/images/header_bg.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 8rem 5% 4rem;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            padding: 4rem 5%;
+        }
+
+        .gallery-item {
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            color: var(--white);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="logo">SMK Miftahul Jannah</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="profile.html">Profil</a></li>
+            <li><a href="activities.html">Kegiatan</a></li>
+            <li><a href="gallery.html">Galeri</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+        </ul>
+
+    </nav>
+
+    <header class="page-header">
+        <h1 data-aos="fade-down" data-aos-duration="1000">Galeri Sekolah</h1>
+        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Potret kehidupan dan lingkungan belajar di
+            SMK Miftahul Jannah.</p>
+    </header>
+
+    <div class="gallery-grid">
+        <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800">
+            <img src="assets/images/gedung_utama.png" alt="Gedung Sekolah">
+            <div class="gallery-overlay">Gedung Utama</div>
+        </div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800">
+            <img src="assets/images/lab_komputer_update.jpg" alt="Lab Komputer">
+            <div class="gallery-overlay">Laboratorium Komputer</div>
+        </div>
+
+        <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800">
+            <img src="assets/images/suasana_belajar.jpg" alt="Suasana Belajar">
+            <div class="gallery-overlay">Suasana Belajar</div>
+        </div>
+
+        <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800">
+            <img src="assets/images/hadrah_personnel.jpg" alt="Personil Hadrah">
+            <div class="gallery-overlay">Personil Hadrah</div>
+        </div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800">
+            <img src="assets/images/upacara.jpg" alt="Upacara">
+            <div class="gallery-overlay">Upacara</div>
+        </div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800">
+            <img src="assets/images/perda_batim_barlen.jpg" alt="Perda Batim Barlen">
+            <div class="gallery-overlay">Perda Batim Barlen</div>
+        </div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800">
+            <img src="assets/images/kunjungan.jpg" alt="Kunjungan">
+            <div class="gallery-overlay">Kunjungan</div>
+        </div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800">
+            <img src="assets/images/upacara_17_agustus.jpg" alt="Upacara 17 Agustus">
+            <div class="gallery-overlay">Upacara 17 Agustus</div>
+        </div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800">
+            <img src="assets/images/paduan_suara_siswi.jpg" alt="Paduan Suara Siswi">
+            <div class="gallery-overlay">Paduan Suara Siswi</div>
+        </div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800">
+            <img src="assets/images/wisuda_2024_2025.jpg" alt="Wisudawan Wisudawati 2024-2025">
+            <div class="gallery-overlay">Wisudawan Wisudawati 2024-2025</div>
+        </div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800">
+            <img src="assets/images/cerdas_cermat.jpg" alt="Cerdas Cermat">
+            <div class="gallery-overlay">Cerdas Cermat</div>
+        </div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-duration="800">
+            <img src="assets/images/karnaval.jpg" alt="Karnaval">
+            <div class="gallery-overlay">Karnaval</div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>SMK MJ</h3>
+                <p>Membentuk karakter, mengasah keahlian.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Tautan</h3>
+                <a href="index.html">Beranda</a>
+                <a href="profile.html">Profil</a>
+                <a href="activities.html">Kegiatan</a>
+                <a href="gallery.html">Galeri</a>
+                <a href="contact.html">Kontak</a>
+            </div>
+            <div class="footer-col">
+                <h3>Kontak</h3>
+                <p>Jl. Dsn. Pelle, Ds. Batuporo Timur, Kec. Kedungdung, Kab. Sampang, Madura</p>
+                <p>moh.farhan111204@gmail.com</p>
+                <p>+62 858-5972-4804</p>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; Moh.Farhan
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+
+</html>

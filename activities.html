@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kegiatan - SMK Miftahul Jannah</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(12, 36, 97, 0.9), rgba(12, 36, 97, 0.8)), url('assets/images/header_bg.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 8rem 5% 4rem;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .activity-feed {
+            max-width: 1000px;
+            margin: 4rem auto;
+            padding: 0 5%;
+        }
+
+        .activity-post {
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 3rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .activity-img {
+            max-height: 400px;
+            overflow: hidden;
+        }
+
+        .activity-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .activity-content {
+            padding: 2rem;
+        }
+
+        .activity-date {
+            color: #7f8fa6;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .activity-content h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .activity-tags {
+            margin-top: 1.5rem;
+        }
+
+        .tag {
+            background: #dfe4ea;
+            color: #2f3542;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="logo">SMK Miftahul Jannah</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="profile.html">Profil</a></li>
+            <li><a href="activities.html">Kegiatan</a></li>
+            <li><a href="gallery.html">Galeri</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+        </ul>
+
+    </nav>
+
+    <header class="page-header">
+        <h1 data-aos="fade-down" data-aos-duration="1000">Kegiatan Sekolah</h1>
+        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Berita terbaru dan dokumentasi aktivitas
+            siswa.</p>
+    </header>
+
+    <div class="activity-feed">
+        <!-- New Post -->
+        <article class="activity-post" data-aos="fade-up" data-aos-duration="1000">
+            <div class="activity-img">
+                <img src="assets/images/pelatihan_dasar_kp.jpg" alt="Pelatihan Dasar KP">
+            </div>
+            <div class="activity-content">
+                <span class="activity-date">7-8 Januari 2026</span>
+                <h2>Pelatihan Dasar Makalah di Kegiatan KP</h2>
+                <p>Pelatihan Dasar Makalah di kegiatan KP dari kampus UIM (Univertsitas Islam Madura).</p>
+                <div class="activity-tags">
+                    <span class="tag">KP</span>
+                    <span class="tag">Pelatihan</span>
+                    <span class="tag">UIM</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- New Post Sharing -->
+        <article class="activity-post" data-aos="fade-up" data-aos-duration="1000">
+            <div class="activity-img">
+                <img src="assets/images/sharing_makalah.jpg" alt="Sharing Dasar Penulisan Makalah">
+            </div>
+            <div class="activity-content">
+                <span class="activity-date">6 Januari 2026</span>
+                <h2>Sharing Dasar-Dasar Penulisan Makalah</h2>
+                <p>Sharing Dasar-Dasar Penulisan Makalah untuk Pra-Perkuliahan.</p>
+                <div class="activity-tags">
+                    <span class="tag">Pra-Perkuliahan</span>
+                    <span class="tag">Literasi</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Post New -->
+        <article class="activity-post" data-aos="fade-up" data-aos-duration="1000">
+            <div class="activity-img">
+                <img src="assets/images/tka_kelas_3_smk.jpg" alt="TKA Kelas XII">
+            </div>
+            <div class="activity-content">
+                <span class="activity-date">3 November 2025</span>
+                <h2>Tes Kemampuan Akademik (TKA) Kelas XII</h2>
+                <p>Kegiatan Tes Kemampuan Akademik (TKA) untuk Siswa Siswi Kelas XII SMK Miftahul Jannah. Siswa
+                    dipersiapkan untuk menghadapi ujian kompetensi dengan materi yang mendalam.</p>
+                <div class="activity-tags">
+                    <span class="tag">Akademik</span>
+                    <span class="tag">Kelas XII</span>
+                </div>
+            </div>
+        </article>
+
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>SMK MJ</h3>
+                <p>Membentuk karakter, mengasah keahlian.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Tautan</h3>
+                <a href="index.html">Beranda</a>
+                <a href="profile.html">Profil</a>
+                <a href="activities.html">Kegiatan</a>
+                <a href="gallery.html">Galeri</a>
+                <a href="contact.html">Kontak</a>
+            </div>
+            <div class="footer-col">
+                <h3>Kontak</h3>
+                <p>Jl. Dsn. Pelle, Ds. Batuporo Timur, Kec. Kedungdung, Kab. Sampang, Madura</p>
+                <p>moh.farhan111204@gmail.com</p>
+                <p>+62 858-5972-4804</p>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; Moh.Farhan
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+
+</html>

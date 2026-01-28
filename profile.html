@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Sekolah - SMK Miftahul Jannah</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(12, 36, 97, 0.9), rgba(12, 36, 97, 0.8)), url('assets/images/header_bg.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 8rem 5% 4rem;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .visi-misi {
+            padding: 4rem 5%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+
+        .staff-img {
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .staff-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .staff-card:hover .staff-img img {
+            transform: scale(1.1);
+        }
+
+        .staff-info {
+            padding: 1.5rem;
+        }
+
+        .staff-info h4 {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+
+        .staff-info p {
+            color: #7f8fa6;
+            margin-top: 0.5rem;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .visi-misi {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Flexbox adjustment for centering last item */
+        .staff-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem 5% 5rem;
+        }
+
+        .staff-card {
+            flex: 1 1 280px;
+            max-width: 350px;
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="logo">SMK Miftahul Jannah</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="profile.html">Profil</a></li>
+            <li><a href="activities.html">Kegiatan</a></li>
+            <li><a href="gallery.html">Galeri</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+        </ul>
+
+    </nav>
+
+    <header class="page-header">
+        <h1 data-aos="fade-down" data-aos-duration="1000">Profil Sekolah</h1>
+        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Mengenal lebih dekat visi, misi, dan tim
+            kami.</p>
+    </header>
+
+    <section class="visi-misi">
+        <div class="card" data-aos="fade-right" data-aos-duration="1000">
+            <h3>Visi</h3>
+            <p>Mencetak tenaga profesional sebagai lembaga untuk membentuk pribadi yang beriman, berilmu, dan
+                berkualitas dalam bekerja baik di tingkat nasional atau global.</p>
+        </div>
+        <div class="card" data-aos="fade-left" data-aos-duration="1000">
+            <h3>Misi</h3>
+            <ul>
+                <li>Membentuk pribadi yang beriman, berakhlak, dan bertawakal kepada Tuhan Yang Maha Kuasa.</li>
+                <li>Membentuk sumber daya manusia (SDM) yang berkarakter, jujur, bertanggung jawab, peduli, dan memiliki
+                    semangat pelayanan prima.</li>
+                <li>Meningkatkan relevansi program sarana dan prasarana pendidikan menengah kejuruan agar dapat bekerja
+                    dengan baik di tingkat nasional & global.</li>
+                <li>Menghasilkan sumber daya manusia (SDM) yang berjiwa entrepreneur sesuai dengan kebutuhan dunia
+                    usaha/dunia industri yang mampu bersaing dalam era global.</li>
+                <li>Mampu menciptakan produk dan jasa yang berkualitas.</li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="section-title">
+        <h2>Pimpinan & Staf Pengajar</h2>
+        <p>Guru-guru berdedikasi tinggi yang siap membimbing siswa menuju kesuksesan.</p>
+    </div>
+
+    <section class="staff-grid">
+        <!-- Principal -->
+        <div class="staff-card" data-aos="fade-up" data-aos-duration="800">
+            <div class="staff-img">
+                <img src="assets/images/principal_updated.jpg" alt="Kepala Sekolah">
+            </div>
+            <div class="staff-info">
+                <h4>Abd.Malik, S.Pd., Gr.</h4>
+                <p>Kepala Sekolah</p>
+            </div>
+        </div>
+
+        <!-- Vice Principal -->
+        <div class="staff-card" data-aos="fade-up" data-aos-duration="800">
+            <div class="staff-img">
+                <img src="assets/images/vice_principal_updated.jpg" alt="Wakil Kepala Sekolah">
+            </div>
+            <div class="staff-info">
+                <h4>Yuni Nur Widayanti, S.Pd., Gr.</h4>
+                <p>Wakil Kepala Sekolah</p>
+            </div>
+        </div>
+
+        <!-- Teacher: Fiqri Febrian -->
+        <div class="staff-card" data-aos="fade-up" data-aos-duration="800">
+            <div class="staff-img">
+                <img src="assets/images/teacher_fiqri.jpg" alt="Guru">
+            </div>
+            <div class="staff-info">
+                <h4>Fiqri Febrian iswandi,S.E</h4>
+                <p>Guru</p>
+            </div>
+        </div>
+
+        <!-- Teacher: Maisuroh -->
+        <div class="staff-card" data-aos="fade-up" data-aos-duration="800">
+            <div class="staff-img">
+                <img src="assets/images/teacher_maisuroh.jpg" alt="Guru">
+            </div>
+            <div class="staff-info">
+                <h4>Maisuroh, S.Pd., Gr.</h4>
+                <p>Guru</p>
+            </div>
+        </div>
+
+        <!-- Teacher: Maisaroh -->
+        <div class="staff-card" data-aos="fade-up" data-aos-duration="800">
+            <div class="staff-img">
+                <img src="assets/images/teacher_maisaroh.jpg" alt="Guru">
+            </div>
+            <div class="staff-info">
+                <h4>Maisaroh, S.Pd., Gr.</h4>
+                <p>Guru</p>
+            </div>
+        </div>
+
+        <!-- Teacher: Bella Sundari Agustika -->
+        <div class="staff-card" data-aos="fade-up" data-aos-duration="800">
+            <div class="staff-img">
+                <img src="assets/images/teacher_bella.jpg" alt="Guru">
+            </div>
+            <div class="staff-info">
+                <h4>Bella Sundari Agustika, S.Akun., Gr</h4>
+                <p>Guru</p>
+            </div>
+        </div>
+
+        <!-- Proktor -->
+        <div class="staff-card" data-aos="fade-up" data-aos-duration="800">
+            <div class="staff-img">
+                <img src="assets/images/proktor.jpg" alt="Moh. Farhan">
+            </div>
+            <div class="staff-info">
+                <h4>Moh. Farhan</h4>
+                <p>Proktor</p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>SMK MJ</h3>
+                <p>Membentuk karakter, mengasah keahlian.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Tautan</h3>
+                <a href="index.html">Beranda</a>
+                <a href="profile.html">Profil</a>
+                <a href="activities.html">Kegiatan</a>
+                <a href="gallery.html">Galeri</a>
+                <a href="contact.html">Kontak</a>
+            </div>
+            <div class="footer-col">
+                <h3>Kontak</h3>
+                <p>Jl. Dsn. Pelle, Ds. Batuporo Timur, Kec. Kedungdung, Kab. Sampang, Madura</p>
+                <p>moh.farhan111204@gmail.com</p>
+                <p>+62 858-5972-4804</p>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; Moh.Farhan
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 100
+        });
+
+        // Manual initialization for staff cards if data attributes need help, but usually auto-init works.
+    </script>
+</body>
+
+</html>
